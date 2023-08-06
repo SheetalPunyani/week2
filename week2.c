@@ -1,9 +1,6 @@
 
-//This is a tic tac toe game written in C designed for beginners
-//(This doesn't contain the use of pointers or other more advanced C topics)
 #include <stdio.h>
 #include <stdlib.h>
-
 
 char board[3][3];
 const char PLAYER1 = 'X';
@@ -55,7 +52,7 @@ int main()
       printf("\nWould you like to play again? (Y/N): ");
       fflush(stdin);
       scanf("%c", &response);
-      response = toupper(response);
+      
    } while (response == 'Y');
 
    printf("Thanks for playing!");
